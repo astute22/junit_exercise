@@ -56,11 +56,11 @@
 				]]> 
 			</if>
 			<if test="beginDate">
-				and to_char(hire_date,'yyyy-MM-dd') >= to_char(beginDate,'yyyy-MM-dd')
+				and to_char(hire_date,'yyyy-MM-dd') >= #{beginDate}
 			</if>
 			<if test="endDate">
 				<![CDATA[
-				and to_char(hire_date,'yyyy-MM-dd') <= to_char(endDate,'yyyy-MM-dd')
+				and to_char(hire_date,'yyyy-MM-dd') <= #{endDate}
 				]]> 
 			</if>
 		</where>

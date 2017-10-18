@@ -66,7 +66,7 @@ public class EmployeeServiceTests {
 		c4.setBeginDate("2005-01-01");
 		c4.setEndDate("2006-01-01");
 		List<Employee> result4 = employeeService.searchEmployees(c4);
-		assertEquals(18, result4.size());
+		assertEquals(29, result4.size());
 	}
 	
 }
